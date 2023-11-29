@@ -40,6 +40,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 3rem;
 }
 
 .home img:first-child {
@@ -75,7 +76,7 @@ body {
 }
 
 .content img {
-    padding-right: 18.6rem;
+    padding-right: 14.6rem;
     padding-left: 14.6rem;
     padding-bottom: 9.3rem;
     padding-top: 3.5rem;
@@ -434,4 +435,25 @@ footer p {
         justify-content: center;
     }
         
+}
+
+.home img, .content h1, p, .card,  img,  h1, p, .content_entre_em_contato{
+    animation: move var(--delay);
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(-50px);
+    }
+}
+
+.content img {
+    animation: moveY 1s 1.5s alternate;
+}
+
+@keyframes moveY {
+    50% {
+        transform: translateY(30px);
+    }
 }
